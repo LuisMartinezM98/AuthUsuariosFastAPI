@@ -24,14 +24,13 @@ Esta API permite autenticar usuarios mediante dos métodos configurables en tiem
 
 ## Estructura
 
-app/
-├── api/ # Rutas FastAPI
-├── domain/ # Modelos y patrones (estrategias)
-├── repositories/ # Acceso a datos
-├── services/ # Lógica de negocio
-└── main.py # Punto de entrada
-tests/ # Pruebas automatizadas
-
+- **app/**
+  - **api/**: 🚀 Rutas FastAPI
+  - **domain/**: 📦 Modelos y patrones (estrategias)
+  - **repositories/**: 🗄️ Acceso a datos
+  - **services/**: 🛠️ Lógica de negocio
+  - **main.py**: 🎯 Punto de entrada
+- **tests/**: 🧪 Pruebas automatizadas
 
 ---
 
@@ -52,9 +51,12 @@ source env/bin/activate  # Linux/macOS
 .\env\Scripts\activate   # Windows
 
 pip install -r requirements.txt
+```
 
 2. Ejecutar servdor
+```bash
 uvicorn app.main:app --reload
+```
 
 3. Probar endpoint /login con JSON
 {
